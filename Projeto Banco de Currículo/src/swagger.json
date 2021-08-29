@@ -1,0 +1,115 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API eh nois",
+    "description": "essa é a api da luluzinha",
+    "version": "0.0.1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "tags": [
+          "candidato"
+        ],
+        "summary": "Cadastro de candidato",
+        "description": "Rota de cadastro de usuário, recebe: username, cargo, data, estadoCivil, sexo, cep, enderecoRua, complemento, bairro, cidade, estado, telefone1, telefone2, telefonecel, telefonecont, email, identidade, cpf, veiculo, habilitacao",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/register_body"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "pong"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "register_body": {
+        "properties": {
+          "username": {
+            "type": "string"
+          },
+          "cargo": {
+            "type": "string"
+          },
+          "data": {
+            "type": "string"
+          },
+          "estadoCivil": {
+            "type": "string"
+          },
+          "sexo": {
+            "type": "string"
+          },
+          "cep": {
+            "type": "string"
+          },
+          "enderecoRua": {
+            "type": "string"
+          },
+          "complemento": {
+            "type": "string"
+          },
+          "bairro": {
+            "type": "string"
+          },
+          "cidade": {
+            "type": "string"
+          },
+          "estado": {
+            "type": "string"
+          },
+          "telefone1": {
+            "type": "string"
+          },
+          "telefone2": {
+            "type": "string"
+          },
+          "telefonecel": {
+            "type": "string"
+          },
+          "telefonecont": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "identidade": {
+            "type": "string"
+          },
+          "cpf": {
+            "type": "string"
+          },
+          "veiculo": {
+            "type": "string"
+          },
+          "habilitacao": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

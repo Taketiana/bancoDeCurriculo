@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+           <title>.:JobsNET:.</title>
+           
+       
+           <link rel="stylesheet" type="text/css" href="style.css">
+           <script src="./main.js" type="text/javascript" defer></script>
+
+</head>
+<body class="gradient">
+
+    
+    
+        <div class="img"><img src="./Imagens/JobsNET.png" ></div>
+        <h2>CADASTRO</h2>
+    
+     
+        
+        <form  name="Formulario" class="container">
+
+        <h3>DADOS PESSOAIS</h3>
+
+        <label>Nome Completo </label>
+            <input  type="String" id="username" required> </br>                      
+        <label>Cargo Pretendido </label>
+             <input type="String" id="cargo"> </br>     
+        <label> Data de nascimento </label>
+            <input id="data" type="date" name="nascimento" required> </br>
+        <label> Estado Civil </label>
+            <select name= "Estado Civil" id="estatoCivil"> 
+            <option selected disable value=""></option>
+            <option>Solteiro(a)</option>
+            <option>Casado(a)</option>
+            <option>Divorciado(a)</option>
+            <option>Viúvo(a)</option>
+            </select>        
+        <label> Gênero: </label>
+            <select id= "genero" > 
+            <option selected disable value=""></option>
+            <option>Feminino</option>
+            <option>Masculino</option>
+            <option>Prefiro não responder</option>
+            </select>  </br>
+        
+        <label> CEP </label>
+            <input type="String" id="cep" name="endereco" required></br>
+        <label> Endereço </label> 
+            <input type="String" id="endereco" name="enderecoRua" required> </br>
+        <label> Complemento </label> 
+            <input type="String" id="complemento" name="complemento" placeholder="ex. nº 56. Bloco 2, AP 301" >  </br>
+        <label> Bairro </label> 
+            <input type="String" id="bairro" name="bairro" required> </br>
+        <label> Cidade </label>
+            <input  type="String" id="cidade" name="cidade" required> </br>
+        <label> Estado </label>
+            <input type="String" id="estado" name="estado" required> </br>
+        <label>Telefone 1 </label>
+            <input type="String" id="telefone1"> </br>
+        <label>Telefone 2 </label>
+            <input type="String" id="telefone2"> </br>
+        <label>Celular </label>
+            <input type="String" id="telefonecel"> </br>
+        <label> Contato </label>
+            <input type="String" id="telefonecont"> </br>
+        <label> E-mail: </label>
+            <input type="email" id="e-mail" placeholder="Digite seu e-mail aqui"> </br>
+
+        <h3>DOCUMENTOS</h3>
+
+        <label>Identidade </label>
+            <input type="String" id="identidade" required></br>
+        <label>CPF </label> 
+            <input type="String" id="cpf" required> </br>
+        
+        <label> Possui Veículo </label>
+            <select id="possuiveiculo"> 
+            <option selected disable value=""></option> 
+            <option>Sim</option>
+            <option>Não</option>
+            </select>  
+
+        <label> Habilitação </label> 
+            <select id="categoriasHabilitacao"> 
+            <option selected disable value=""></option>    
+            <option>Categoria A </option>
+            <option>Categoria B </option>
+            <option>Categoria C </option>
+            <option>Categoria D </option>
+            <option>Categoria E </option>
+            <option>Categoria AB </option>
+            
+            </select>  
+           
+         <button type="submit" id="enviar" onClick="criarCandidato()">ENVIAR</button>
+               
+    </form>
+
+
+
+
+
+
+</body>
+
+<footer>
+<section class="rodape"><h4>ENTRE EM CONTATO</h4></br>
+
+            <a target="_blank" href="https://www.facebook.com/luciana.pessesantos">Facebook</a>
+
+            <a href="mailto:lucianapharma@gmail.com">E-mail</a>
+      
+            <a href="https://wa.me/27992336973">Whatzap</a>
+    
+
+</section>
+</footer>
+</html>
